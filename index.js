@@ -11,11 +11,11 @@ btn.addEventListener('click', () => {
         leer1.innerHTML = "you cant give empty order!";
     }else{
         let li = document.createElement('LI');
-        li.innerHTML = input2;
+        li.innerHTML = input2 + `<button class="delete" style='font-size: 20px'><i class='fas fa-trash-alt' ></i></button>`;
         new_order.insertBefore(li, new_order.childNodes[0]);
         input1.value = '';
     }
 })
-li.addEventListener('click', () =>{
-    li.style.textDecoration = "line-through";
+new_list.addEventListener('click', function(){
+    new_list.style.textDecoration = "line-through";
 })
