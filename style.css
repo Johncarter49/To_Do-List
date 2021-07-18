@@ -94,3 +94,6 @@ h4{
 .all{
     color: rgb(105, 225, 255);
 }
+.completed{
+    text-decoration: line-through;
+}

@@ -16,6 +16,23 @@ btn.addEventListener('click', () => {
         input1.value = '';
     }
 })
-new_list.addEventListener('click', function(){
-    new_list.style.textDecoration = "line-through";
+
+
+let task = document.getElementById('task');
+new_order.addEventListener('click', function(){
+    task.style.textDecoration = "line-through";
 })
+
+let task_delete = document.querySelectorAll(".delete");
+for(let i=0; i<task_delete.length; i++){
+    task_delete[i].onclick = function(){
+        this.parentNode.remove();
+    }
+}
+
+
+// for(let i=0; i<task.length; i++){
+//     task[i].onclick = function(){
+//         this.classList.toggle('completed');
+//     }
+// }
